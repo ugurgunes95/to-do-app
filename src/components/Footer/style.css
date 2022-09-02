@@ -1,0 +1,14 @@
+.footer {
+    height: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #525252;
+    color: whitesmoke;
+    border-bottom: 1px solid grey;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0%;
+}

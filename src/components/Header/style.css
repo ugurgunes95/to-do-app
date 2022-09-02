@@ -1,0 +1,13 @@
+.navbar {
+    height: 60px;
+    left: 1.5%;
+    width: 92%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #525252;
+    color: whitesmoke;
+    border-bottom: 1px solid grey;
+    text-transform: uppercase;
+    border-radius: 0 0 15px 15px;
+}

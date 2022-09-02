@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./style.css";
 
 const Header = () => {
-  return (
-    <h1>Header</h1>
-  )
-}
+  return <nav className="navbar h1 m-3">todos</nav>;
+};
 
-export default Header
+export default Header;
