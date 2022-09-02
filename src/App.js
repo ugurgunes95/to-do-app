@@ -1,11 +1,15 @@
 import React from "react";
-import { Home } from "./pages";
+import { Home, Todos } from "./pages";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <Home />
-    </>
+    <section>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/todos" element={<Todos />} />
+      </Routes>
+    </section>
   );
 };
 

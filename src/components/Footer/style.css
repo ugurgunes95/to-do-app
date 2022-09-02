@@ -11,4 +11,17 @@
     text-transform: uppercase;
     position: absolute;
     bottom: 0%;
+    animation-name: footer-animation;
+    animation-duration: 0.75s;
+}
+
+@keyframes footer-animation {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 60px;
+    }
+
 }

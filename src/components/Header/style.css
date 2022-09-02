@@ -10,4 +10,19 @@
     border-bottom: 1px solid grey;
     text-transform: uppercase;
     border-radius: 0 0 15px 15px;
+    animation-name: header-animation;
+    animation-duration: 0.5s;
+}
+
+@keyframes header-animation {
+    from {
+        height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        height: 60px;
+        opacity: 1;
+    }
+
 }

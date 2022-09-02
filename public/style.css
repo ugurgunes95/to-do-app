@@ -18,3 +18,7 @@ hr {
     border-color: rgba(0, 0, 0, 0.5);
     box-shadow: 1px 5px 20px #fefffe;
 }
+
+ul{
+    list-style: none;
+}
