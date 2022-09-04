@@ -1,7 +1,7 @@
 .navbar {
     height: 60px;
     left: 1.5%;
-    width: 92%;
+    width: 92.5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,7 +9,7 @@
     color: whitesmoke;
     border-bottom: 1px solid grey;
     text-transform: uppercase;
-    border-radius: 0 0 15px 15px;
+    border-radius: 10px 10px 15px 15px;
     animation-name: header-animation;
     animation-duration: 0.5s;
 }

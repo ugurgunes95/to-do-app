@@ -2,6 +2,10 @@
     animation-name: list-item-animation;
     animation-duration: 1500ms;
     transition-duration: 0.3s;
+    max-height: 200px;
+    min-height: 100px;
+    overflow-y: auto;
+    border-radius: 25px;
 }
 
 .list-item:hover {
@@ -10,15 +14,86 @@
 
 @keyframes list-item-animation {
     from {
-        width: 0;
+        opacity: 0;
     }
 
     to {
-        width: 100%;
+        opacity: 1
     }
 }
 
 .done-icon {
     cursor: pointer;
     background-color: transparent;
+}
+
+.x-icon {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.todo-container {
+    min-height: 10vh;
+    max-height: 70vh;
+    overflow-y: scroll;
+    scrollbar-highlight-color: red;
+    padding: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #939090;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(67, 66, 66);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+}
+
+.done-text {
+    text-decoration: line-through;
+}
+
+.delete-icon {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.new-icon {
+    cursor: pointer;
+    background: transparent;
+    position: absolute;
+    left: 85%;
+    bottom: 10%;
+    z-index: 1;
+    animation-name: new-icon-animation;
+    animation-duration: 1500ms;
+    border-radius: 100%;
+}
+
+.new-icon:hover {
+    box-shadow: 0px 10px 40px #81c981;
+}
+
+@keyframes new-icon-animation {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 85%;
+    }
 }

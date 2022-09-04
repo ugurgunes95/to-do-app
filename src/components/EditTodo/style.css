@@ -1,0 +1,36 @@
+.edit-container {
+    position: absolute;
+    width: 90%;
+    top: 15%;
+    left: 5%;
+    z-index: 3;
+    min-height: 65vh;
+    max-height: 65vh;
+    border-radius: 25px;
+    box-shadow: 0px 10px 45px #32a98d;
+    animation-name: edit-container-animation;
+    animation-duration: 750ms;
+}
+
+textarea {
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 25px;
+    min-height: 25vh;
+    max-height: 25vh;
+    background-color: transparent;
+    padding: 5px;
+    color: whitesmoke;
+
+}
+
+
+@keyframes edit-container-animation {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 15%;
+    }
+}

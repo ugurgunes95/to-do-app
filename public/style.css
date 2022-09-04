@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
     display: border-box;
+    letter-spacing: 2.5px;
 
 }
 
 body {
-    height: 100vh;
     width: 100%;
     background-color: #313131;
     color: whitesmoke;
@@ -19,6 +19,6 @@ hr {
     box-shadow: 1px 5px 20px #fefffe;
 }
 
-ul{
+ul {
     list-style: none;
 }

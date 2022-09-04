@@ -1,0 +1,18 @@
+.user {
+    position: absolute;
+    bottom: 60px;
+    background-color: darkcyan;
+    animation-name: user-animation;
+    animation-duration: 1500ms;
+}
+
+
+@keyframes user-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
