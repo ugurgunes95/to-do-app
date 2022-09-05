@@ -15,7 +15,7 @@ const EditTodo = ({ setEdit, selected, setTodos }) => {
         minLength="3"
       ></textarea>
       <button
-        className="btn btn-dark btn-block mt-3"
+        className="btn btn-outline-light btn-block mt-3"
         onClick={() => setEdit(false)}
       >
         Cancel

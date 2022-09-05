@@ -27,10 +27,16 @@ textarea {
 
 @keyframes add-container-animation {
     from {
-        top: -100%;
+        width: 20%;
+        min-height: 0;
+        height: 0;
+        left: 30%
     }
 
     to {
-        top: 15%;
+        width: 90%;
+        min-height: 65vh;
+        height: 65vh;
+        left: 5%
     }
 }

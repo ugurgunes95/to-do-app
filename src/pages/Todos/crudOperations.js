@@ -3,7 +3,9 @@ import axios from "axios";
 const getTodos = async (setTodos) => {
   await axios
     .get("https://63120d5b19eb631f9d7ec061.mockapi.io/todos")
-    .then((res) => setTodos(res.data))
+    .then((res) => {
+      setTodos(res.data.reverse());
+    })
     .catch((err) => console.log(err.message));
 };
 

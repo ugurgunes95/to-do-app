@@ -4,7 +4,8 @@
     top: 15%;
     left: 5%;
     z-index: 3;
-    min-height: 65vh;
+    height: 65vh;
+    min-height: 50vh;
     max-height: 65vh;
     border-radius: 25px;
     box-shadow: 0px 10px 45px #32a98d;
@@ -27,10 +28,16 @@ textarea {
 
 @keyframes edit-container-animation {
     from {
-        top: -100%;
+        width: 20%;
+        min-height: 0;
+        height: 0;
+        left: 30%
     }
 
     to {
-        top: 15%;
+        width: 90%;
+        min-height: 65vh;
+        height: 65vh;
+        left: 5%
     }
 }

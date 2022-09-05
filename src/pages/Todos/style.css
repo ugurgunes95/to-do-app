@@ -35,7 +35,7 @@
 
 .todo-container {
     min-height: 10vh;
-    max-height: 70vh;
+    max-height: 60vh;
     overflow-y: scroll;
     scrollbar-highlight-color: red;
     padding: 5px;
@@ -80,7 +80,7 @@
     bottom: 10%;
     z-index: 1;
     animation-name: new-icon-animation;
-    animation-duration: 1500ms;
+    animation-duration: 750ms;
     border-radius: 100%;
 }
 
