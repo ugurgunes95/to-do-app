@@ -13,7 +13,6 @@ const AddTodo = ({ id, setTodos, setAdd }) => {
         placeholder="Please write at least 3 letters."
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
-        minLength="3"
       ></textarea>
       <button
         className="btn btn-outline-light btn-block mt-3"
@@ -24,8 +23,13 @@ const AddTodo = ({ id, setTodos, setAdd }) => {
       <button
         className="btn btn-success btn-block mt-2"
         onClick={() => {
-          addTodo(id, newTodo, setTodos);
+          if(newTodo.length>2){
+            addTodo(id, newTodo, setTodos);
           setAdd(false);
+          }
+          else {
+            alert("Please write at least 3 letters.")
+          }
         }}
       >
         Add

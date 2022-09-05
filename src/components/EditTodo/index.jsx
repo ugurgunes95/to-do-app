@@ -23,8 +23,12 @@ const EditTodo = ({ setEdit, selected, setTodos }) => {
       <button
         className="btn btn-success btn-block mt-2"
         onClick={() => {
-          setEdit(false);
-          updateTodo(selected, setTodos, updated);
+          if (updated.length > 2) {
+            setEdit(false);
+            updateTodo(selected, setTodos, updated);
+          } else {
+            alert("Please write at least 3 letters.");
+          }
         }}
       >
         Save
